@@ -17,6 +17,8 @@ class MarsViewController: UIViewController {
     let burger = "Congratulations!\n You have just ordered a Martian Burger!!!"
     
     delegate?.passtheburger(bread: burger)
+    
+    delegate?.passtheburger(bread: nil)
         
 	// lets modify navbar
     let font = UIFont(name: "SFUIDisplay-Thin", size: 32)

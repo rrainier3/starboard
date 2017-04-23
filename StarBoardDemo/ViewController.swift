@@ -19,7 +19,8 @@ class ViewController: UIViewController, MarsViewProtocolDelegate,UIImagePickerCo
 
     internal func passtheburger(bread: String?) {
         if bread == nil {
-            return
+            //return
+            print("You don't have any money!")
         } else {
             print(bread!)
         }
@@ -55,8 +56,8 @@ class ViewController: UIViewController, MarsViewProtocolDelegate,UIImagePickerCo
         bt.layer.borderWidth = 2.0
         bt.layer.borderColor = UIColor.lightGray.cgColor
         bt.layer.cornerRadius = 30
-        //bt.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
-        bt.addTarget(self, action: #selector(photoFunctionHandler), for: .touchUpInside)
+        bt.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
+        //bt.addTarget(self, action: #selector(photoFunctionHandler), for: .touchUpInside)
         return bt
     }()
     
